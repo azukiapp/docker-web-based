@@ -42,5 +42,6 @@ RUN  apt-get update -qq \
       mysql-client \
       postgresql-client-$PG_MAJOR \
       libmysqlclient-dev \
+      sqlite3 libsqlite3-dev \
   && apt-get clean -qq \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
