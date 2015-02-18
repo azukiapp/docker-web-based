@@ -20,6 +20,7 @@ Database:
 - PostgreSQL client
 - MySQL client
 - MongoDB
+- SQLite3
 
 ### Usage with `azk`
 
