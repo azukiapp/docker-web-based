@@ -1,11 +1,3 @@
-# The container includes:
-#
-# azukiapp/web-based:
-# * MySQL Client
-# * PostgreSQL Client
-# * MongoDB
-#
-
 FROM azukiapp/ubuntu
 MAINTAINER Azuki <support@azukiapp.com>
 
@@ -26,11 +18,20 @@ RUN wget -qO - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc \
 
 RUN  apt-get update -qq \
   && apt-get install -y -qq \
+      autoconf \
+      imagemagick \
+      libbz2-dev \
+      libevent-dev \
+      libglib2.0-dev \
+      libjpeg-dev \
+      libmagickcore-dev \
+      libmagickwand-dev \
+      libncurses-dev \
       libcurl4-openssl-dev \
       libffi-dev \
       libgdbm-dev \
       libpq-dev \
-      libreadline6-dev \
+      libreadline-dev libreadline6-dev \
       libssl-dev \
       libtool \
       libxml2-dev \
@@ -39,9 +40,8 @@ RUN  apt-get update -qq \
       software-properties-common \
       zlib1g-dev \
       mongodb \
-      mysql-client \
+      mysql-client libmysqlclient-dev \
       postgresql-client-$PG_MAJOR \
-      libmysqlclient-dev \
       sqlite3 libsqlite3-dev \
   && apt-get clean -qq \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

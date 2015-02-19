@@ -14,6 +14,7 @@ Image content:
 - Ubuntu 14.04
 - Git
 - VIM
+- ImageMagick
 
 Database:
 
