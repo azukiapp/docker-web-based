@@ -7,13 +7,13 @@ Versions (tags)
 ---
 
 <versions>
-- [`latest`, `trusty`, `14`, `14.04`](https://github.com/azukiapp/docker-web-based/blob/master/Dockerfile)
+- [`debian`, `jessie`, `8`, `8.0`](https://github.com/azukiapp/docker-web-based/blob/debian/8.0/Dockerfile)
 </versions>
 
 Image content:
 ---
 
-- Ubuntu 14.04
+- Debian 8.0 Jessie
 - Git
 - VIM
 - ImageMagick
